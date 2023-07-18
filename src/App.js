@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
-import Pro_mgmt from './pages/Pro_mgmt';
 import Project2 from './pages/Project2';
 import { StickyContainer } from 'react-sticky';
+import Workflow from './pages/Workflow'
 
 const App = () => {
   const [showCards, setShowCards] = useState({
@@ -25,7 +25,7 @@ const App = () => {
         <div>
           <Routes>
             <Route path="/project" element={<Project2 />} />
-            <Route path="/mgmt" element={<Pro_mgmt />} />
+            <Route path="/mgmt" element={<Workflow />} />
             <Route path="/" element={<Home showCards={showCards} />} />
           </Routes>
         </div>

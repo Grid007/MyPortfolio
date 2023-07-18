@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
-const CardMgmt = () => {
+const WorkflowCard = () => {
   // eslint-disable-next-line
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const draggableRef = useRef(null);
@@ -56,7 +56,7 @@ const CardMgmt = () => {
             <path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16Zm8,200a8,8,0,0,1-8,8H80a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8ZM168,56a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,56Z"></path>
           </svg>
           <h5 className="mb-2 text-lg font-semibold tracking-tight text-black hover:underline md:text-xl md:mb-2 lg:text-4xl lg:mb-4">
-            Project Management Tool
+            WorkFlowUtil
           </h5>
           <p className="mb-3 font-normal text-gray-500 md:text-sm md:mb-2 lg:text-base lg:mb-4">2022</p>
           <Link
@@ -111,4 +111,4 @@ const CardMgmt = () => {
   );
 };
 
-export default CardMgmt;
+export default WorkflowCard;

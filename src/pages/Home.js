@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import Card from '../components/Card';
 import Card1 from '../components/Card1';
-import CardMgmt from '../components/CardMgmt';
+import Workflowcard from '../components/WorkflowCard'
 import Icons from '../components/Icons';
 import { Transition } from '@headlessui/react';
 
@@ -50,7 +50,7 @@ const Home = ({ showCards }) => {
             enterTo="card2"
             className="-rotate-12  hover:z-10"
           >
-            <CardMgmt />
+            <Workflowcard />
           </Transition>
 
         </div>
